@@ -3,6 +3,10 @@ class Student {
 	color: string;
 	number: number;
 
+	display(): void {
+		console.log(this);
+	}
+
 	constructor(name: string, color: string, number:number) {
 		this.name = name;
 		this.color = color;
@@ -21,4 +25,6 @@ let students: Student[] = [
 	new Student("Emilie", "Green", 8)
 ];
 
-console.log(students);
+for(let student of students) {
+	student.display();
+}

@@ -4,6 +4,9 @@ var Student = /** @class */ (function () {
         this.color = color;
         this.number = number;
     }
+    Student.prototype.display = function () {
+        console.log(this);
+    };
     return Student;
 }());
 var students = [
@@ -16,4 +19,7 @@ var students = [
     new Student("Lisa", "Blue", 7),
     new Student("Emilie", "Green", 8)
 ];
-console.log(students);
+for (var _i = 0, students_1 = students; _i < students_1.length; _i++) {
+    var student = students_1[_i];
+    student.display();
+}
