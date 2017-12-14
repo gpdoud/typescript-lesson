@@ -52,7 +52,7 @@ class Student {
 	}
 }
 
-let students = [
+let students:Student[] = [
 	new Student("Sue Ann", "Green", 7),
 	new Student("Greg", "Black", 4),
 	new Student("Eric B", "Blue", 11),
